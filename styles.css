@@ -1,1 +1,55 @@
-/*  your css code here. If applicable */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+.btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.stop {
+    grid-column: span 3;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.stop:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
